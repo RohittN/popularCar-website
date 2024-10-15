@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .login {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('carimage6.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .personal-log {
+            background-color: rgba(74, 63, 63, 0.8);
+            padding: 50px;
+            border-radius: 5px;
+        }
+        .personal-log h2 {
+            text-align: center;
+            font-style: bold;
+            font-size: xx-large;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        input {
+            display: block;
+            padding: 10px 40px 10px 35px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+        input[type="submit"]:disabled {
+            background-color: #888;
+            cursor: not-allowed;
+        }
+        .error-message {
+            color: #ff6b6b;
+            font-size: 14px;
+            margin-top: 5px;
+            display: block;
+        }
+        input.error {
+            border-color: #ff6b6b;
+        }
+        input.success {
+            border-color: #51cf66;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="personal-log">
+            <h2>LOGIN FORM</h2>
+            <form action="Carswebsite.html" method="get">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Email or Phone number" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+    </div>
+    <script src="carwebsite.js"></script>
+</body>
+</html>
